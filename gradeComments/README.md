@@ -11,8 +11,9 @@ Example
 -------
 
 Input file:
-    (-5) Late submission
-        -Archer
+
+	(-5) Late submission
+		-Archer
 
 	Implementation (90)
 	===================
@@ -34,7 +35,8 @@ Input file:
 		-Kane
 
 Output file "Archer.txt":
-    (-5) Late submission
+
+	(-5) Late submission
 
 	Implementation (90)
 	===================
@@ -53,15 +55,15 @@ Input File
 
 GC checks the first non-whitespace character to determine what the current line is. Allowed characters are any alphabetic character, "(", "-", "+", and "=". Lines that contain only whitespace are ignored. Lines that begin with any character other than those specified will cause the script to print a warning, but will not stop execution.
 
-- Category: A grading category is a group of grade comments. They are all lines that begin with an alphabetic character. Categories are optional and the script will work fine if you do not include any. If the grading categories have a number surrounded by parentheses, it will be added to the total grade from which the grade comments of individual students will be subtracted or added to in order to find their total score. If the total grade feature is not used, the total for each student will be the points lost rather than their earned grade.
+- **Category:** A grading category is a group of grade comments. They are all lines that begin with an alphabetic character. Categories are optional and the script will work fine if you do not include any. If the grading categories have a number surrounded by parentheses, it will be added to the total grade from which the grade comments of individual students will be subtracted or added to in order to find their total score. If the total grade feature is not used, the total for each student will be the points lost rather than their earned grade.
 
-- Grade Comment: Start with "(". The suggested format for grade comments is "(-n) Comment" where n is any integer and the minus sign can also be a plus sign. If your comments are in that format, the script will be able to print the student's total number of points lost or gained at the end of their output file.
+- **Grade Comment:** Start with "(". The suggested format for grade comments is "(-n) Comment" where n is any integer and the minus sign can also be a plus sign. If your comments are in that format, the script will be able to print the student's total number of points lost or gained at the end of their output file.
 
-- Multi-line Grade Comment: If the line after a grade comment begins with "+", that line minus the plus sign will be appended to the current grade comment with a newline inbetween. This allows multi-line grade comments. Their is no limit to the number of lines a grade comment can have. If the script is called with "nowrap" as the argument after the filename, then the multiline grade comments will be made into a single line in the output files, with erroneous whitespace removed.
+- **Multi-line Grade Comment:** If the line after a grade comment begins with "+", that line minus the plus sign will be appended to the current grade comment with a newline inbetween. This allows multi-line grade comments. Their is no limit to the number of lines a grade comment can have. If the script is called with "nowrap" as the argument after the filename, then the multiline grade comments will be made into a single line in the output files, with erroneous whitespace removed.
 
-- Student Name: Start with "-" followed by the student's name. Output files will be written for each unique student name (not including the beginning dash). After all grade comments, there should be at least one student name, otherwise the script will print a warning and continue execution.
+- **Student Name:** Start with "-" followed by the student's name. Output files will be written for each unique student name (not including the beginning dash). After all grade comments, there should be at least one student name, otherwise the script will print a warning and continue execution.
 
-- Comment: Any line that starts with "=" will be ignored. Starting lines with a character not in the list of acceptable characters is not recommended due to the possibility of future additions to this program.
+- **Comment:** Any line that starts with "=" will be ignored. Starting lines with a character not in the list of acceptable characters is not recommended due to the possibility of future additions to this program.
 
 Output File
 -----------
