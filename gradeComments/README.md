@@ -1,9 +1,9 @@
 GradeComment Documentation
 ==========================
 
-GC reads a file with grade comments for multiple students and writes files that contain grade comments pertaining to each specific student.
+Reads a file with grade comments for multiple students and writes files that contain grade comments pertaining to each specific student.
 
-Usage: py gradeComments.py filename [nowrap]
+	python3 gradeComments.py filename [nowrap]
 
 Where filename is a local file or a relative path to a file. If the nowrap argument is included, then any multiline grade comments will be made into a single line in the output files.
 
